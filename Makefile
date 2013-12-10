@@ -1,8 +1,8 @@
-DEVICE  = attiny44a
+DEVICE  = attiny24a
 F_CPU   = 8000000 #
 FUSE_L  = 0xE2# internal 8MHz oscillator running ATTINY at 8MHz, 64ms startup delay
 FUSE_H  = 0xDD# SPI programming enabled, BOD @ 2.7v
-AVRDUDE = avrdude -c avrispmkII -P usb -p attiny44
+AVRDUDE = avrdude -c avrispmkII -P usb -p attiny24
 
 
 CFLAGS  =  -I. -DDEBUG_LEVEL=0
